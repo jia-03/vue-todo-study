@@ -22,6 +22,12 @@
   },
   "homepage": "https://github.com/jia-03/vue-todo#readme",
   "dependencies": {
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "vue-template-compiler": "^2.6.10",
+    "webpack-cli": "^3.3.4",
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
     "autoprefixer": "^9.6.0",
@@ -41,14 +47,9 @@
     "stylus-loader": "^3.0.2",
     "template-compiler": "^1.2.1",
     "url-loader": "^2.0.0",
-    "vue": "^2.6.10",
     "vue-loader": "^15.7.0",
     "webpack": "^4.34.0",
-    "webpack-dev-server": "^3.7.1"
-  },
-  "devDependencies": {
-    "extract-text-webpack-plugin": "^4.0.0-beta.0",
-    "vue-template-compiler": "^2.6.10",
-    "webpack-cli": "^3.3.4"
+    "webpack-dev-server": "^3.7.1",
+    "webpack-merge": "^4.2.1"
   }
 }

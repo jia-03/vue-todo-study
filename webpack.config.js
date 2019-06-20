@@ -70,7 +70,7 @@ if (isDev) {
     })
     config.devtool = '#cheap-module-eval-source-map'
     config.devServer = {
-        port: 8000,
+        port: 8080,
         host: '0.0.0.0',
         overlay: {
             errors: true //错误显示在网页中
