@@ -66,11 +66,11 @@ export default {
   outline: none;
 
   &:after {
-    content: url('../assets/images/round.svg');
+    content: url('../../assets/images/round.svg');
   }
 
   &:checked:after {
-    content: url('../assets/images/done.svg');
+    content: url('../../assets/images/done.svg');
   }
 }
 
