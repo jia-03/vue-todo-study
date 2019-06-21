@@ -5,7 +5,8 @@ const isDev = process.env.NODE_ENV === 'development'
 
 const config = {
     target: 'web',
-    mode: 'production',   //暂时指定为生产环境
+    mode:process.env.NODE_ENV || 'production',   //development ||produciton
+    // mode: 'production',   //暂时指定为生产环境
     entry: path.join(__dirname, '../client/index.js'),
     output: {
         filename: 'bundle.[hash:8].js',

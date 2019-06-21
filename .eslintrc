@@ -1,7 +1,12 @@
 {
     "extends":"standard",
     "plugins":[
-        "html"
+        "html",
+        "vuefix",
+        "vue"
     ],
-    "parser":"babel-eslint"
+    "parser":"babel-eslint",
+    "rules":{
+      "no-new":"off"
+    }
 }

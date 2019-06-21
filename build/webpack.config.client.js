@@ -58,14 +58,14 @@ if (isDev) {
         devServer,
         plugins: defaultPluins.concat([
             new webpack.HotModuleReplacementPlugin(), //热加载相关
-            new webpack.NoEmitOnErrorsPlugin() //热加载相关
+            // new webpack.NoEmitOnErrorsPlugin() //热加载相关
         ])
     })
 } else {
     config = merge(baseConfig, {
         entry: {
             app: path.join(__dirname, '../client/index.js'),
-            vendor: ['vue']
+            // vendor: ['vue']
         },
         output: {
             filename: '[name].[chunkhash:8].js'
@@ -87,6 +87,12 @@ if (isDev) {
                     ]
                 })
             },]
+        },
+        optimization:{
+          splitChunks:{
+            chunks:'all'
+          },
+          runtimeChunk:true
         },
         plugins:defaultPluins.concat([
         new ExtractPlugin('styles.[chunkhash:8].css'),

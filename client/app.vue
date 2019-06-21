@@ -17,7 +17,7 @@ export default {
     Footer,
     Todo
   }
-};
+}
 </script>
 
 <style lang="stylus" scoped>
