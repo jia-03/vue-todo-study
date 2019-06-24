@@ -17,9 +17,11 @@ const devServer = {
     overlay: {
         errors: true //错误显示在网页中
     },
-    hot: true //仅仅改变修改代码
+    hot: true, //仅仅改变修改代码
+    historyApiFallback:{
+      index:'/index.html'
+    }
     // historyFallback:{
-
     // }
     // open:true //是否自动打开浏览器
 }
