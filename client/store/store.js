@@ -22,6 +22,7 @@ import { STATUS_CODES } from 'http';
 const isDev = process.env.NODE_ENV === 'development'
 
 export default()=>{
+  // const store =  new Vuex.Store({
   return new Vuex.Store({
       strict :isDev,
       state:defaultState,
@@ -48,4 +49,17 @@ export default()=>{
         }
       }
     })
+    // if(module.hot){
+    //   module.hot.accept([
+    //     './state/state',
+    //     './mutations/mutations',
+    //     './getters/getters',
+    //     './actions/actions'
+    //   ],()=>{
+    //     const newState = require('./state/state').default
+    //     const newMutations = require('./mutations/mutations').default
+    //     const newState = require('./state/state').default
+    //     const newState = require('./state/state').default
+    //   })
+    // }
 }
